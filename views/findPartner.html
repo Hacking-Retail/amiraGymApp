@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Find my partner</title>
+</head>
+<body>
+    <header>
+        <h1>Fitness-Hub</h1>
+    </header>
+    <!-- <nav class="main-nav">
+        <ul>
+            <li><a href="#" class="join">Join the club</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> -->
+  
+    <main class="main-find">
+        <article>
+            <h2>Find my partner</h2>
+            <p>
+                It's easy, just select what kind of workout and when you wanna come 
+            </p>
+            <form>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Select your workout</label>
+                  <select class="form-control workoutSelect" id="exampleFormControlSelect1">
+                    <option>Cardio HIIT</option>
+                    <option>Crossfit</option>
+                    <option>Yoga</option>
+                    <option>Pilate</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select your Time</label>
+                    <select class="form-control timeSelect" id="timeSelect">
+                      <option >10 AM</option>
+                      <option>11 AM</option>
+                      <option>12 AM</option>
+                      <option>04 PM </option>
+                      <option>05 PM </option>
+                      <option>06 PM </option>
+                      <option>07 PM </option>
+                      <option>08 PM </option>
+                    </select>
+                </div>
+                           
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Little word to motivate your futur partner</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+
+                <button class="findPartnerBtn" id="findBtn" >Find Partner</button>
+              </form>
+           
+        </article>
+       
+        
+        
+        
+    </main>
+   
+    <footer>
+        <p class="copyright">copyright 2019 ZouakAmira</p>
+    </footer>
+
+    <script src="../scripts/findPartner.js"></script>
+</body>
+</html>

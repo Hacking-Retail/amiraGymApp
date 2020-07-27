@@ -1,0 +1,259 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+  }
+  p{
+    font-size: 18px;
+  }
+  header{
+    background-color: #9E9E9E;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  header h1{
+    color: white;
+    display: inline-block;
+    justify-content: left;
+    padding: 6px 12px;
+    border-radius: 36px;
+  }
+  .banner{
+    position: relative;
+  }
+  .banner img{
+    max-width: 100%;
+  }
+  .banner .welcome{
+    color: white;
+    padding: 30px;
+    font-size: 60px;
+    position: absolute;
+    justify-content: center;
+    right:0;
+    top: 30%;
+  } 
+  .banner .welcome span{
+    font-size: 1.4em;
+  }
+  nav{
+    background: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+  }
+  nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+  }
+  nav li a{
+    text-decoration: none;
+    color: #4B4B4B;
+  }
+  nav li a:hover{
+    text-decoration: underline;
+  }
+  nav li a.join{
+    color: #F63232;
+  }
+  main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  article h2{
+    color: #F63232;
+    font-size: 40px;
+  }
+  article p{
+    line-height: 2em;
+    color: #4B4B4B;
+  }
+  article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+  }
+  .images li{
+    display: inline-block;
+    list-style-type: none;
+    width: 40%;
+    margin: 20px 5%;
+    position: relative;
+  }
+  .images li:hover{
+    top: -4px;
+  }
+  .images li img{
+    max-width: 100%;
+  }
+  section.join{
+    background: #F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4B4B4B;
+  }
+  section.join h2{
+    font-size: 36px;
+  }
+  .services{
+      padding: 20px;
+      /* max-width: 500px; */
+      margin: 20px auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .service{
+      width: 100px;
+      margin: 10px auto;
+     text-align: center; 
+      padding: 20px;
+      padding-left: 20px;
+      color: white;
+      border-radius: 10px;
+      justify-content: center;
+      background-color:#F63232 ;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+  }
+  .service i {
+      margin-bottom: 10px;
+      color: white;
+  }
+  .findPartnerBtn{
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding:10px 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      margin-left: 40%;
+      cursor: pointer;
+      font-size: 1.2em;
+  }
+  form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+  }
+  
+  form input:valid{
+    border: 4px solid #71d300;
+  }
+  footer{
+    background: #F63232;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .main-find{
+    margin-top:100px;
+  }
+
+  /* responsive styles */
+/* responsive styles */
+
+@media screen and (max-width: 1400px){
+
+    .banner .welcome{
+      font-size: 40px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 960px){
+  
+    .banner .welcome{
+      font-size: 28px;
+    }
+    nav li{
+      font-size: 18px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 700px){
+  
+    .banner .welcome{
+      font-size: 20px;
+      position: relative;
+      text-align: center;
+      padding: 10px;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+      font-size: 1em;
+    }
+    nav li{
+      font-size: 18px;
+    }
+    .images li{
+      width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+  
+  }
+  
+  @media screen and (max-width: 560px){
+  
+    .banner .welcome{
+      font-size: 20px;
+      position: relative;
+      text-align: center;
+    }
+    .banner .welcome br{
+      display: none;
+    }
+    .banner .welcome span{
+      font-size: 1em;
+    }
+    nav li{
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+    }
+    article h2{
+      font-size: 36px;
+    }
+    header, nav{
+      position: relative;
+      top: 0;
+    }
+    main{
+        margin:30px auto;
+    }
+    p{
+        text-align: justify;
+    }
+    
+  
+  }
