@@ -15,8 +15,7 @@ findPartner=  () =>{
 
     partnerList.forEach( e => {
         if ( e.time == timeSelect.value && e.workout == workoutSelect.value ){
-<<<<<<< HEAD
-            availablePrtner.push(e);
+
             // document.querySelector('.noPartner').style.visibility = "hidden";
             // document.getElementById('displayPartner').innerHTML +=`
             // <div class="card grid-item" style="width: 18rem;">
@@ -26,8 +25,7 @@ findPartner=  () =>{
             //         <a href="#" class="btn btn-success" id="inviteBtn">Invite</a>
             //     </div>
             // </div>`
-=======
-            document.querySelector('.noPartner').style.visibility = "hidden";
+         document.querySelector('.noPartner').style.visibility = "hidden";
             document.getElementById('displayPartner').innerHTML +=`
             <div class="card grid-item" style="width: 18rem;">
                 <i class="fas fa-user fa-7x"></i>
@@ -36,7 +34,7 @@ findPartner=  () =>{
                     <a href="#" class="btn btn-success inviteBtn">Invite</a>
                 </div>
             </div>`
->>>>>>> quoteBranch
+
         }else{
             console.log('no match found');
             //  document.querySelector('.noPartner').innerHTML = `
@@ -52,34 +50,6 @@ findPartner=  () =>{
   
 };
 
-updateUI = (array) =>{
-    if ( array) {
-        document.querySelector('.noPartner').innerHTML= ''
-        for (let i=0 ; i < array.length ; i++){
-        document.getElementById('displayPartner').innerHTML +=`
-        <div class="card grid-item" style="width: 18rem;">
-            <i class="fas fa-user fa-7x"></i>
-            <div class="card-body">
-                <h5 class="card-title">${array[i].name}</h5>
-                <a href="#" class="btn btn-success" id="inviteBtn" onclick="invite()">Invite</a>
-            </div>
-        </div>`
-        }
-        
-    //     document.getElementById('inviteBtn').addEventListener('click', ()=>{
-    //         window.open("confirmInvitation.html")
-    //    });
-    }else{
-        document.getElementById('displayPartner').innerHTML ='';
-        document.querySelector('.noPartner').innerHTML += `           
-                <i class="fas fa-frown-open fa-7x"></i></br>
-                <p>Sorry no one is available </p>
-            `
-
-    };
-   
-
-}
 
 
 
@@ -87,11 +57,6 @@ updateUI = (array) =>{
 document.getElementById('findBtn').addEventListener('click', (e)=>{
     e.preventDefault();
     findPartner();
-<<<<<<< HEAD
-    updateUI(availablePrtner)
-    console.log(availablePrtner)
-    
-=======
     let inviteButtons = document.querySelectorAll('.inviteBtn');
     inviteButtons.forEach( btn => {
         btn.addEventListener('click', ()=>{
@@ -101,7 +66,6 @@ document.getElementById('findBtn').addEventListener('click', (e)=>{
     // document.querySelector('.inviteBtn').addEventListener('click', ()=>{
     //      window.open("confirmInvitation.html")
     // });
->>>>>>> quoteBranch
 });
 
 
