@@ -1,4 +1,3 @@
-
 findPartner=  () =>{
     
     let workoutSelect =document.querySelector('.workoutSelect');
@@ -14,8 +13,7 @@ findPartner=  () =>{
     ]
     partnerList.forEach( e => {
         if ( e.time == timeSelect.value && e.workout == workoutSelect.value ){
-            console.log(e.name)
-
+            document.querySelector('.noPartner').style.visibility = "hidden";
             document.getElementById('displayPartner').innerHTML +=`
             <div class="card grid-item" style="width: 18rem;">
                 <i class="fas fa-user fa-7x"></i>
@@ -25,8 +23,8 @@ findPartner=  () =>{
                 </div>
             </div>`
         }else{
-
-            // document.getElementById('displayPartner').innerHTML = `
+            console.log('no match found');
+            //  document.querySelector('.noPartner').innerHTML = `
             // <div class="container noPartner">
             //     <i class="fas fa-frown-open fa-7x"></i></br>
             //     <p>Sorry no one is available </p>
@@ -51,7 +49,6 @@ document.getElementById('findBtn').addEventListener('click', (e)=>{
          window.open("confirmInvitation.html")
     });
 });
-
 
 
 

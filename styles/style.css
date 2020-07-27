@@ -191,12 +191,27 @@ body, ul, li, h1, h2, a{
     gap: 10px;
   }
   .noPartner{
+      visibility: hidden;
   max-width: 200px;
   }
   /*------------------Confirm Invitation----------------------*/
   .confirm{
+      justify-content: center;
       margin-top: 200px;
+      margin-left: 10%;
       height: 300px;
+  }
+  .confirm i{
+     
+
+      margin: 10px auto;
+      margin-left: 35%;
+      color: #4CAF50;
+  }
+  .HomePageBtn{
+      display: block;
+      max-width: 100px;
+      margin: 10px auto;
   }
   /* responsive styles */
 /* responsive styles */
