@@ -32,6 +32,8 @@ findPartner=  () =>{
             <div class="container noPartner">
                 <i class="fas fa-frown-open fa-7x"></i></br>
                 <p>Sorry no one is available </p>
+                <a href="../index.html" class="btn btn-success">HomePage</a>
+
             </div>
             `
 
