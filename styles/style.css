@@ -191,7 +191,7 @@ body, ul, li, h1, h2, a{
     gap: 10px;
   }
   .noPartner{
-      visibility: hidden;
+      
   max-width: 200px;
   }
   /*------------------Confirm Invitation----------------------*/
