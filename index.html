@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Fitness-Hub</title>
 </head>
-<body>
+<body onload="newQuote()">
     <!-- <header>
         <h1>Fitness-Hub</h1>
     </header> -->
@@ -16,6 +16,10 @@
         <div class="welcome">
             <h2>Welcome to <br><span>Fitness-Hub</span></h2>
             <p>A place to work on yourself</p>
+        </div>
+        <div id="quoteDisplay">
+            <!-- Quotes will display here -->
+            <p>hello there</p>
         </div>
     </section>
     <nav class="main-nav">
@@ -67,7 +71,7 @@
     </main>
     <section class="join">
         <h2>Receive our newsletter</h2>
-        <p>Kepp updated with the latest research in health and fitness, upcoming events and more features with our weekly newsletter
+        <p>Keep updated with the latest research in health and fitness, upcoming events and more features with our weekly newsletter
         </p>
         <form >
             <input type="email" name="email" placeholder="type email" required>
@@ -76,6 +80,7 @@
     <footer>
         <p class="copyright">copyright 2019 ZouakAmira</p>
     </footer>
+    <script src="./scripts/index.js"></script>
     
 </body>
 </html>
