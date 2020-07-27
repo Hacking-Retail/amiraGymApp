@@ -173,6 +173,31 @@ body, ul, li, h1, h2, a{
     margin-top:100px;
   }
 
+
+
+  /*  ------------------------Find partner page -------------------------*/
+  .grid-container {
+      margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    padding: 10px;
+  }
+  .grid-item {
+    
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    gap: 10px;
+  }
+  .noPartner{
+  max-width: 200px;
+  }
+  /*------------------Confirm Invitation----------------------*/
+  .confirm{
+      margin-top: 200px;
+      height: 300px;
+  }
   /* responsive styles */
 /* responsive styles */
 
