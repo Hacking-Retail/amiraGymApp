@@ -38,6 +38,21 @@ body, ul, li, h1, h2, a{
     right:0;
     top: 30%;
   } 
+  .banner #quoteDisplay{
+    position: absolute;
+    justify-content: center;
+    left:0;
+    top: 70%;
+    z-index: 1;
+    padding: 20px;
+    font-size: 1.4em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
+    margin: 10px;
+    border-radius: 10px;
+    
+
+  }
   .banner .welcome span{
     font-size: 1.4em;
   }

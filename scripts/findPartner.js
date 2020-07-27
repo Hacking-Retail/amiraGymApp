@@ -19,7 +19,7 @@ findPartner=  () =>{
                 <i class="fas fa-user fa-7x"></i>
                 <div class="card-body">
                     <h5 class="card-title">${e.name}</h5>
-                    <a href="#" class="btn btn-success" id="inviteBtn">Invite</a>
+                    <a href="#" class="btn btn-success inviteBtn">Invite</a>
                 </div>
             </div>`
         }else{
@@ -45,9 +45,15 @@ findPartner=  () =>{
 document.getElementById('findBtn').addEventListener('click', (e)=>{
     e.preventDefault();
     findPartner();
-    document.getElementById('inviteBtn').addEventListener('click', ()=>{
-         window.open("confirmInvitation.html")
-    });
+    let inviteButtons = document.querySelectorAll('.inviteBtn');
+    inviteButtons.forEach( btn => {
+        btn.addEventListener('click', ()=>{
+            window.open("confirmInvitation.html")
+       });
+    })
+    // document.querySelector('.inviteBtn').addEventListener('click', ()=>{
+    //      window.open("confirmInvitation.html")
+    // });
 });
 
 
